@@ -1,4 +1,4 @@
-# Certbot GoDaddy Wildcard scripts
+# Certbot GoDaddy Wildcard Kubernetes image
 
 These scripts allow the creation of Let's Encrypt wildcard certificates on GoDaddy managed domains. Certificates created using these scripts will have the Common Name (CN) set to the wildcard domain (e.g. "*.example.com") and a Subject Alternative Name (SAN) for the root domain (e.g. "example.com").
 
