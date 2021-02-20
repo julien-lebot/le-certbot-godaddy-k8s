@@ -2,5 +2,6 @@ FROM certbot/certbot:latest
 RUN apk update && apk add bash curl
 WORKDIR /Certbot-Godaddy
 ADD Certbot-Godaddy .
-ENTRYPOINT [ "/bin/bash" ]
-CMD certbot-godaddy-request.sh
+RUN chmod +x ./*.sh
+ENTRYPOINT [ "/bin/sh", "-c" ]
+CMD ["./certbot-godaddy-request.sh"]
